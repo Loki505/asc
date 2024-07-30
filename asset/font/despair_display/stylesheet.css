@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Despair Display';
+    src: url('DespairDisplay-Bold.woff2') format('woff2'),
+        url('DespairDisplay-Bold.woff') format('woff'),
+        url('DespairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
