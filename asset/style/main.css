@@ -600,6 +600,24 @@ footer:before{
         height: 476px;
     }
 }
+/*CATALOG*/
+.s-catalog__top{
+    margin-bottom: 24px;
+}
+.s-catalog__row{
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+}
+.s-catalog__link{
+    font-size: 12px;
+    line-height: 16px;
+    gap: 24px;
+    align-items: center;
+}
+.s-catalog__img{
+    width: 40px;
+    height: 40px;
+}
 
     /*CONTACT*/
 .s-contact{
