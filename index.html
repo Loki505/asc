@@ -16,7 +16,7 @@
 
     <script src="asset/libs/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="position-relative">
 <header>
     <div class="container">
         <div class="s-header d-flex align-items-center fw-semibold">
@@ -142,7 +142,118 @@
             </div>
             <!--    CATALOG-->
         </section>
-
+        <!--    ADVANTAGES-->
+        <section class="s-advantages section">
+            <div class="row  row-cols-md-5 row-cols-sm-3 row-cols-1 s-advantages__container fw-semibold">
+                <div class="col d-flex gap-24 s-advantages__item">
+                    <img src="asset/picture/svg/advantages_1.svg" alt="" class="s-advantages__img">
+                    <span>Высочайшее качество продукции</span>
+                </div>
+                <div class="col d-flex gap-24 s-advantages__item">
+                    <img src="asset/picture/svg/advantages_2.svg" alt="" class="s-advantages__img">
+                    <span>Цены от производителя</span>
+                </div>
+                <div class="col d-flex gap-24 s-advantages__item">
+                    <img src="asset/picture/svg/advantages_3.svg" alt="" class="s-advantages__img">
+                    <span>Надежная и своевременная доставка</span>
+                </div>
+                <div class="col d-flex gap-24 s-advantages__item">
+                    <img src="asset/picture/svg/advantages_4.svg" alt="" class="s-advantages__img">
+                    <span>Индивидуальный подход к каждому клиенту</span>
+                </div>
+                <div class="col d-flex gap-24 s-advantages__item">
+                    <img src="asset/picture/svg/advantages_5.svg" alt="" class="s-advantages__img">
+                    <span>Оперативность и особый контроль на всех этапах</span>
+                </div>
+            </div>
+        </section>
+        <!--    ADVANTAGES-->
+        <!--    FORM -->
+        <section class="section s-form d-flex">
+            <div class="d-flex s-form__discript">
+                <div class="heading h2">заявка</div>
+                <div>После отправки заявки, наш менеджер свяжется с Вами в ближайшее время, ответит на все вопросы, а также:</div>
+                <div class="row s-form__advantages ">
+                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                        <img src="asset/picture/svg/advantages_6.svg" alt="" class="s-form__advantage__img">
+                        <span>Поможет сориентироваться в ассортименте</span>
+                    </div>
+                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                        <img src="asset/picture/svg/advantages_7.svg" alt="" class="s-form__advantage__img">
+                        <span>Предложит индивидуальные условия</span>
+                    </div>
+                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                        <img src="asset/picture/svg/advantages_8.svg" alt="" class="s-form__advantage__img">
+                        <span>Рассчитает стоимость с доставки</span>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="s-form__form d-flex">
+                    <label class="s-form__label d-flex gap-12 flex-column">
+                        <span>Имя</span>
+                        <input type="text" name="NAME" class="s-form__input">
+                    </label>
+                    <label class="s-form__label d-flex gap-12 flex-column">
+                        <span>Телефон</span>
+                        <input type="text" name="PHONE" class="s-form__input">
+                    </label>
+                    <label class="s-form__label d-flex gap-12 flex-column">
+                        <span>E-mail</span>
+                        <input type="email" name="EMAIL" class="s-form__input">
+                    </label>
+                    <label class="s-form__label s-form__label-textarea d-flex gap-12 flex-column">
+                        <span>Сообщение</span>
+                        <span class="s-form__textarea d-flex gap-20">
+                            <i class="icon i-paper_clip"></i>
+                             <textarea placeholder="Введите сообщение"></textarea>
+                        </span>
+                    </label>
+                    <div>Нажимая "Отправить", вы даете согласие на обработку персональных данных в соответствии с политикой конфиденциальности</div>
+                    <input type="submit" class="s-form__button button button-green button-big" value="Отправить">
+                </div>
+            </form>
+        </section>
+        <!--    FORM -->
+        <!--    NEWS -->
+        <section class="s-news section">
+            <div class="heading h2">Новости</div>
+            <div class="row s-news__container">
+                <div class="col-lg-3 col-sm-4 col-12 s-news__item d-flex gap-24 flex-column">
+                    <a href="#" class="">
+                        <span class="s-news__date fw-semibold">18.03.2023</span>
+                        <span class="s-news__name heading fw-bold">Новая партия габионов поступила в наш магазин</span>
+                        <span class="s-news__text">Мы рады сообщить, что наша компания получила новую партию габионов для строительства дорог. Они отлично подходят для укрепления склонов и берегов водоемов</span>
+                        <span class="button button-secondary s-news__button fw-semibold">Читать <i class="icon i-arrow i-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-12 s-news__item d-flex gap-24 flex-column">
+                    <a href="#" class="">
+                        <span class="s-news__date fw-semibold">18.03.2023</span>
+                        <span class="s-news__name heading fw-bold">Биоматы - экологичный выбор для строительства дорог</span>
+                        <span class="s-news__text">Мы предлагаем вам использовать биоматы для строительства дорог. Это экологичный и надежный материал, который способствует росту растений и предотвращает эрозию почвы.</span>
+                        <span class="button button-secondary s-news__button fw-semibold">Читать <i class="icon i-arrow i-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-12 s-news__item d-flex gap-24 flex-column">
+                    <a href="#" class="">
+                        <span class="s-news__date fw-semibold">18.03.2023</span>
+                        <span class="s-news__name heading fw-bold">Геоматрицы: надежное решение для укрепления грунта</span>
+                        <span class="s-news__text">Наша компания предлагает вам использовать геоматрицы для укрепления грунта при строительстве дорог. Это надежное решение, которое поможет предотвратить образование трещин и деформации поверхности.</span>
+                        <span class="button button-secondary s-news__button fw-semibold">Читать <i class="icon i-arrow i-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-12 s-news__item d-flex gap-24 flex-column">
+                    <a href="#" class="">
+                        <span class="s-news__date fw-semibold">18.03.2023</span>
+                        <span class="s-news__name heading fw-bold">Геомембраны: эффективная защита от воды и влаги</span>
+                        <span class="s-news__text">Мы предлагаем вам использовать геомембраны для защиты дорог от воды и влаги. Это эффективное решение, которое поможет предотвратить размыв грунта и образование оползней.</span>
+                        <span class="button button-secondary s-news__button fw-semibold">Читать <i class="icon i-arrow i-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--    NEWS -->
         <!--    CONTACTS-->
         <section class="s-contact">
             <div class="d-flex s-contact__body">
@@ -201,7 +312,7 @@
     </div>
 
 </main>
-<footer>
+<footer class="section">
     <div class="container">
         <div class="s-footer row row-gap-40 position-relative">
             <div class="col-lg-3 col-md-4 col-12">
