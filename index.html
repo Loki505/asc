@@ -37,7 +37,7 @@
                     </ul>
                 </div>
             </div>
-            <button type="button" class="button button-neon s-header__call">
+            <button type="button" class="button button-neon s-header__call" data-bs-toggle="modal" data-bs-target="#formModal">
                 <i class="icon i-phone"></i>
                 <span class="d-lg-block d-none">Заказать звонок</span>
             </button>
@@ -103,40 +103,99 @@
             <!--    BANNER  -->
             <!--    CATALOG-->
             <div class="s-catalog">
-                <div class="s-catalog__top">
+                <div class="s-catalog__top d-flex ">
                     <div class="heading h3 d-sm-block d-none">Каталог материалов</div>
-                    <div class="fw-semibold">Более 1000 позиций в каталоге</div>
+                    <div class="fw-semibold text-gray">Более 1000 позиций в каталоге</div>
                 </div>
                 <div class="row s-catalog__row">
-                    <div class="col-12 s-catalog__item">
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
                         <a href="#" class="d-flex s-catalog__link">
                             <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
                             <span class="heading">Геотекстиль</span>
                         </a>
                     </div>
-                    <div class="col-12 s-catalog__item">
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
                         <a href="#" class="d-flex s-catalog__link">
                             <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
                             <span class="heading">Геомембраны</span>
                         </a>
                     </div>
-                    <div class="col-12 s-catalog__item">
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
                         <a href="#" class="d-flex s-catalog__link">
                             <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
                             <span class="heading">габионы</span>
                         </a>
                     </div>
-                    <div class="col-12 s-catalog__item">
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
                         <a href="#" class="d-flex s-catalog__link">
                             <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
                             <span class="heading">Георешетки</span>
                         </a>
                     </div>
-                    <div class="col-12 s-catalog__item">
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
                         <a href="#" class="d-flex s-catalog__link">
                             <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
                             <span class="heading">БИОМАТЫ</span>
                         </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">бентонитовые маты</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">ГЕОМАТЫ</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">геокомпозиты</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">Геоматрицы</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">анкерный лист</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">водоотвод и канализация</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">обустройство газонов</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">теплонит</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 s-catalog__item">
+                        <a href="#" class="d-flex s-catalog__link">
+                            <img src="asset/picture/content/content-product.png" alt="" class="s-catalog__img">
+                            <span class="heading">настилы</span>
+                        </a>
+                    </div>
+                    <div class="col-12 d-sm-none">
+                        <button type="button" class="button button-border fw-semibold">
+                            <span>Смотреть все</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -169,26 +228,28 @@
         </section>
         <!--    ADVANTAGES-->
         <!--    FORM -->
-        <section class="section s-form d-flex">
-            <div class="d-flex s-form__discript">
-                <div class="heading h2">заявка</div>
-                <div>После отправки заявки, наш менеджер свяжется с Вами в ближайшее время, ответит на все вопросы, а также:</div>
-                <div class="row s-form__advantages ">
-                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
-                        <img src="asset/picture/svg/advantages_6.svg" alt="" class="s-form__advantage__img">
-                        <span>Поможет сориентироваться в ассортименте</span>
-                    </div>
-                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
-                        <img src="asset/picture/svg/advantages_7.svg" alt="" class="s-form__advantage__img">
-                        <span>Предложит индивидуальные условия</span>
-                    </div>
-                    <div class="col-sm-4 col-12 s-form__advantage d-flex gap-24">
-                        <img src="asset/picture/svg/advantages_8.svg" alt="" class="s-form__advantage__img">
-                        <span>Рассчитает стоимость с доставки</span>
+        <section class="section s-form d-flex position-relative">
+            <div class="flex-1">
+                <div class="d-flex s-form__discript h-100 ">
+                    <div class="heading h2">заявка</div>
+                    <div>После отправки заявки, наш менеджер свяжется с Вами в ближайшее время, ответит на все вопросы, а также:</div>
+                    <div class="row s-form__advantages ">
+                        <div class="col-lg-4 col-md-12 col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                            <img src="asset/picture/svg/advantages_6.svg" alt="" class="s-form__advantage__img">
+                            <span>Поможет сориентироваться в ассортименте</span>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                            <img src="asset/picture/svg/advantages_7.svg" alt="" class="s-form__advantage__img">
+                            <span>Предложит индивидуальные условия</span>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-4 col-12 s-form__advantage d-flex gap-24">
+                            <img src="asset/picture/svg/advantages_8.svg" alt="" class="s-form__advantage__img">
+                            <span>Рассчитает стоимость с доставки</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form action="">
+            <form action="" class="flex-1">
                 <div class="s-form__form d-flex">
                     <label class="s-form__label d-flex gap-12 flex-column">
                         <span>Имя</span>
@@ -198,7 +259,7 @@
                         <span>Телефон</span>
                         <input type="text" name="PHONE" class="s-form__input">
                     </label>
-                    <label class="s-form__label d-flex gap-12 flex-column">
+                    <label class="s-form__label s-form__label-email d-flex gap-12 flex-column">
                         <span>E-mail</span>
                         <input type="email" name="EMAIL" class="s-form__input">
                     </label>
@@ -209,8 +270,10 @@
                              <textarea placeholder="Введите сообщение"></textarea>
                         </span>
                     </label>
-                    <div>Нажимая "Отправить", вы даете согласие на обработку персональных данных в соответствии с политикой конфиденциальности</div>
-                    <input type="submit" class="s-form__button button button-green button-big" value="Отправить">
+                    <div class="d-flex gap-24 flex-column flex-sm-row s-form__footer">
+                        <div>Нажимая "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a href="#" class="text-decoration-underline">политикой конфиденциальности</a></div>
+                        <input type="submit" class="s-form__button button button-green button-big" value="Отправить">
+                    </div>
                 </div>
             </form>
         </section>
@@ -368,6 +431,53 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="formModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title heading h3">заказать звонок</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>Укажите свой номер телефона. Мы перезвоним Вам в течение 5 минут
+                    и проконсультируем по продукции завода и текущим акциям:</div>
+                <form action="" class="modal__form">
+                    <div class="modal__label-group d-flex gap-24 flex-column">
+                        <label class="d-flex flex-column modal__label">
+                            <span>Имя</span>
+                            <input type="text" name="NAME" class="modal__input">
+                        </label>
+                        <label class="d-flex flex-column modal__label">
+                            <span>Телефон</span>
+                            <input type="text" name="PHONE" class="modal__input">
+                        </label>
+                    </div>
+                    <div class="d-flex gap-24 flex-column flex-sm-row align-items-center">
+                        <input data-bs-toggle="modal" data-bs-target="#messageModal" type="button" class="button button-green modal__button w-100 flex-1" value="Отправить">
+                        <div>Нажимая "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a href="#" class="text-decoration-underline">политикой конфиденциальности</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal MESSAGE -->
+<div class="modal fade" id="messageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-dark model-message__dialog">
+        <div class="modal-content">
+            <div class="modal-body position-relative model-message__body d-flex flex-column gap-40 text-center align-items-center">
+                <button type="button" class="btn-close model-message__close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="asset/picture/svg/message_ok.svg" alt="" class="model-message__img">
+                <div class="modal-title heading h3">Заявка приянта</div>
+                <div>Спасибо за выбор нашей компании!<br>
+                    В ближайшее время с вами свяжется наш менеджер.</div>
+                <input type="submit" class="button button-green modal__button model-message__button flex-1" value="ОК">
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
 
