@@ -8,18 +8,19 @@ function autoGrow(...textarea) {
 function fixedHeader(){
     let header = document.querySelector('header');
     let heightHeader = header.clientHeight;
-    window.addEventListener('scroll', function (){
-        if(document.documentElement.scrollTop > heightHeader){
-            document.body.style.paddingTop = heightHeader+'px';
-            header.classList.add('fixed-header');
-        }else{
-            document.body.style.paddingTop = '';
-            header.classList.remove('fixed-header');
-        }
-    })
+    if(document.documentElement.scrollTop > heightHeader){
+        document.body.style.paddingTop = heightHeader+'px';
+        header.classList.add('fixed-header');
+    }else{
+        document.body.style.paddingTop = '';
+        header.classList.remove('fixed-header');
+    }
 }
 document.addEventListener('DOMContentLoaded', function(){
     fixedHeader();
+    window.addEventListener('scroll', function () {
+        fixedHeader();
+    });
     window.addEventListener('resize', function() {
         fixedHeader();
     });
@@ -85,4 +86,5 @@ document.addEventListener('DOMContentLoaded', function(){
             autoGrow(textarea);
         });
     })
+
 });

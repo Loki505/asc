@@ -46,37 +46,182 @@
             </button>
             <div class="d-flex s-header__contacts">
                 <div class="dropdown">
-                    <button class="button button-secondary s-header__time fw-semibold" type="button" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="button button-secondary s-header__time fw-semibold" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAboutTime">
                         <i class="icon i-time"></i>
                         <span>9:00-18:00</span>
                         <i class="icon i-arrow"></i>
                     </button>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasAboutTime">
+                        <div class="offcanvas-header">
+                            <div class="heading h3 fw-bold">Часы работы</div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="d-flex gap-24 fw-semibold item__dotes"><span>Пн-пт</span><span>С 9:00 до 18:00</span></div>
+                            <div class="d-flex gap-24 fw-semibold item__dotes"><span>Сб-вс</span><span>Выходной</span></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="d-flex align-items-center s-header__social">
                     <a href="tel:+79068113535" class="fw-semibold">+7 (906) 811-35-35</a>
-                    <a href="#whatsapp"><i class="icon i-whatsapp"></i></a>
-                    <a href="#telegram"><i class="icon i-telegram"></i></a>
+                    <a href="#whatsapp" class="s-header__social_network"><i class="icon i-whatsapp"></i></a>
+                    <a href="#telegram" class="s-header__social_network"><i class="icon i-telegram"></i></a>
                 </div>
             </div>
         </div>
-        <div>
+<!--        <div>-->
             <nav class="s-menu">
                 <ul class="s-menu__ul d-flex">
                     <li><a href="#" class="s-menu__item heading d-flex">
                         <i class="icon i-burger"></i> <span>Каталог</span> <i class="icon i-arrow-black"></i>
-                    </a></li>
+                    </a>
+                        <nav class="s-menu__children-ul-cover">
+                            <ul class="s-menu__children-ul gap-20 flex-column">
+                                <li class="select"><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>Геотекстиль</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>Геомембраны</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a>
+                                    <ul class="s-menu__children-ul-v2 flex-column gap-40">
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Геомембраны</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Пруток для сварки</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>габионы</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a>
+                                    <ul class="s-menu__children-ul-v2 flex-column gap-40">
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Геомембраны</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Пруток для сварки</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>Георешетки</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>БИОМАТЫ</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>геокомпозиты</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>бентонитовые маты</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>ГЕОМАТЫ</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>ГЕОМАТЫ</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>анкерный лист</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>водоотвод и канализация</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>обустройство газонов</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>теплонит</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <img src="asset/picture/content/menu_picture.png" alt="" class="s-menu__picture">
+                                    <span>настилы</span>
+                                    <i class="icon i-arrow-black i-arrow-right"></i>
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </li>
                     <li><a href="#" class="s-menu__item heading d-flex">
                         <span>Услуги</span> <i class="icon i-arrow-black"></i>
                     </a></li>
                     <li><a href="#" class="s-menu__item heading d-flex">
                         <span>О нас</span> <i class="icon i-arrow-black"></i>
-                    </a></li>
+                    </a>
+                        <nav class="s-menu__children-ul-cover">
+                            <ul class="s-menu__children-ul gap-20 flex-column">
+                                <li class="select"><a href="#" class="s-menu__item heading d-flex">
+                                    <span>Доставка и оплата</span>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <span>Объекты</span>
+                                </a>
+                                    <ul class="s-menu__children-ul-v2 flex-column gap-40">
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Геомембраны</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>Пруток для сварки</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                        <li><a href="#" class="s-menu__item heading d-flex">
+                                            <span>ПНД</span>
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <span>Сертификаты</span>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <span>Новости</span>
+                                </a></li>
+                                <li><a href="#" class="s-menu__item heading d-flex">
+                                    <span>Реквизиты</span>
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </li>
                     <li><a href="#" class="s-menu__item heading d-flex"><span>Контакты</span></a></li>
                     <li><a href="#" class="s-menu__item heading d-flex">
                         <span>Информация</span> <i class="icon i-arrow-black"></i>
@@ -84,7 +229,7 @@
                 </ul>
                 <button type="button" class="button button-green s-menu__button d-sm-none"><i class="icon i-phone-mobile"></i></button>
             </nav>
-        </div>
+<!--        </div>-->
     </div>
 </header>
 <main>
@@ -339,7 +484,7 @@
                         </div>
                         <a href="#" class="button button-green">Заказать звонок</a>
                         <div class="dropdown">
-                            <button class="button button-light-white fw-semibold" type="button" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="button button-light-white fw-semibold" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAboutTime">
                                 <span>9:00-18:00</span>
                                 <i class="icon i-arrow-black"></i>
                             </button>
