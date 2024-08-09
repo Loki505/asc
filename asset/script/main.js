@@ -85,6 +85,23 @@ document.addEventListener('DOMContentLoaded', function(){
         window.addEventListener('resize', function() {
             autoGrow(textarea);
         });
-    })
+    });
+
+    [...document.querySelectorAll('.jsMenuModal')].forEach(function (menu){
+        [...menu.querySelectorAll('.jsMenuModalDrop')].forEach(function (link){
+            link.addEventListener('click', function (){
+                console.log('pp');
+                this.classList.toggle('open');
+            })
+        });
+    });
+    [...document.querySelectorAll('.jsShowMore')].forEach(function (e){
+        e.addEventListener('click', function (){
+            this.classList.toggle('open');
+            this.parentElement.classList.toggle('open');
+        })
+    });
+
+
 
 });
